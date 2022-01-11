@@ -1,2 +1,1 @@
-# secure-password-generation
-Generate Passwords Securely
+# Generate Passwords Securely
