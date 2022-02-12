@@ -2,7 +2,7 @@
 
 Installation
 
-`git clone https://github.com/Broski-1/secure-password-generation/`
+`git clone https://github.com/BroskiSec/secure-password-generation/`
 
 `cd secure-password-generation`
 
