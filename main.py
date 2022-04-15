@@ -1,16 +1,15 @@
-import random 
 import string
 import argparse
+import secrets
+import random
 
 parser = argparse.ArgumentParser()
 parser.add_argument('amount', help='amount of passwords to generate', type=int)
 args = parser.parse_args()
 
 for x in range(int(args.amount)):
-    # generate a random string using ascii, digits, and punctuation, varying 25-250 characters in length
-    x = ('').join(random.choices(string.ascii_letters + string.digits + string.punctuation, k=random.randint(25, 250)))
-    # we reverse the string as to not be predictable with the random module
+    x = string.ascii_letters + string.digits + string.punctuation 
+    x = ''.join(secrets.choice(x) for i in range(random.randint(50, 250)))
     print(x[::-1]) 
     print(f'Password length is {len(x)}')
-    # delete variable from memory
     del x
